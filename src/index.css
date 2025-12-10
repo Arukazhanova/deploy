@@ -1,0 +1,92 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #9b3377; /* черный фон */
+  color: #fff; /* белый текст */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #fff;
+}
+
+/* AG Grid стили */
+.ag-theme-alpine {
+  background-color: #111; /* темный фон для таблицы */
+  color: #fff;
+}
+
+.ag-theme-alpine .ag-header {
+  background-color: #222; /* темная шапка */
+  color: #fff;
+  font-weight: bold;
+}
+
+.ag-theme-alpine .ag-row {
+  background-color: #1a1a1a; /* строки темнее */
+  color: #fff;
+}
+
+.ag-theme-alpine .ag-row:hover {
+  background-color: #333;
+}
+
+.ag-theme-alpine .ag-row-selected {
+  background-color: #555 !important;
+  color: #fff;
+}
+
+/* DatePicker стили */
+.react-datepicker {
+  font-family: Arial, sans-serif;
+  background-color: #111; /* фон календаря */
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px;
+}
+
+.react-datepicker__header {
+  background-color: #222;
+  color: #fff;
+  border-bottom: 1px solid #555;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+  color: #fff;
+}
+
+.react-datepicker__day:hover {
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.react-datepicker__day--selected {
+  background-color: #555;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: #fff;
+}
+
+.date-display {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+.ag-theme-alpine {
+  background-color: #000; /* черный фон */
+  color: #ff0a0a; /* текст белый */
+}
+
+.ag-theme-alpine .ag-header {
+  background-color: #cc1a1a; /* темная шапка */
+  color: #fff;
+}
