@@ -16,14 +16,23 @@ const App: React.FC = () => {
   return (
     <AuthProvider>
       <BrowserRouter>
-        <nav style={{ padding: "10px", backgroundColor: "#333" }}>
-          <Link to="/" style={{ color: "white", marginRight: 15 }}>Home</Link>
-          <Link to="/shopping-list" style={{ color: "white", marginRight: 15 }}>Shopping List</Link>
-          <Link to="/ag-grid" style={{ color: "white", marginRight: 15 }}>AG Grid</Link>
-          <Link to="/datepicker" style={{ color: "white", marginRight: 15 }}>Date Picker</Link>
-          <Link to="/lab10" style={{ color: "white", marginRight: 15 }}>Lab 10</Link>
-          <Link to="/lab11" style={{ color: "white" }}>Lab 11</Link>
-        </nav>
+        <nav
+  style={{
+    padding: "12px",
+    backgroundColor: "#f7a8c9",
+    display: "flex",
+    gap: "20px",
+    boxShadow: "0 2px 8px rgba(247,168,201,0.4)",
+  }}
+>
+  <Link style={{ color: "white", fontWeight: "bold" }} to="/">Home</Link>
+  <Link style={{ color: "white", fontWeight: "bold" }} to="/shopping-list">Shopping List</Link>
+  <Link style={{ color: "white", fontWeight: "bold" }} to="/ag-grid">AG Grid</Link>
+  <Link style={{ color: "white", fontWeight: "bold" }} to="/datepicker">Date Picker</Link>
+  <Link style={{ color: "white", fontWeight: "bold" }} to="/lab10">Lab 10</Link>
+  <Link style={{ color: "white", fontWeight: "bold" }} to="/lab11">Lab 11</Link>
+</nav>
+
 
         <Routes>
           <Route path="/" element={<Home />} />

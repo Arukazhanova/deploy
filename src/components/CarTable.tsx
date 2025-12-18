@@ -20,7 +20,8 @@ interface CarTableProps {
 
 const CarTable: React.FC<CarTableProps> = ({ cars, onEdit, onDelete }) => {
   return (
-    <Table sx={{ marginTop: 3 }}>
+    <Table sx={{ backgroundColor: "#fff8fb" }}>
+
       <TableHead>
         <TableRow>
           <TableCell><b>ID</b></TableCell>

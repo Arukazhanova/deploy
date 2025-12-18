@@ -81,13 +81,33 @@ useEffect(() => {
       </DialogContent>
 
       <DialogActions>
-        <Button onClick={onClose} color="inherit">
-          Cancel
-        </Button>
-        <Button onClick={handleSubmit} variant="contained">
-          Save
-        </Button>
-      </DialogActions>
+  <Button
+    onClick={onClose}
+    variant="outlined"
+    sx={{
+      borderColor: "#f7a8c9",
+      color: "#e07daa",
+      "&:hover": {
+        borderColor: "#e07daa",
+        backgroundColor: "#ffe6f1",
+      }
+    }}
+  >
+    Cancel
+  </Button>
+
+  <Button
+    onClick={handleSubmit}
+    variant="contained"
+    sx={{
+      backgroundColor: "#f7a8c9",
+      "&:hover": { backgroundColor: "#e892b7" }
+    }}
+  >
+    Save
+  </Button>
+</DialogActions>
+
     </Dialog>
   );
 };
